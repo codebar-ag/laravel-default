@@ -1,6 +1,6 @@
 <?php
 
-namespace CodebarAg\DocuWare\Tests;
+namespace CodebarAg\LaravelDefault\Tests;
 
 use CodebarAg\LaravelDefault\LaravelDefaultServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
