@@ -16,4 +16,3 @@ class LaravelDefaultTest extends TestCase
         $this->assertTrue(true);
     }
 }
-
