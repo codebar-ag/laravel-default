@@ -19,7 +19,7 @@ class LaravelDefaultServiceProvider extends PackageServiceProvider
             ->name('laravel-default')
             ->hasConfigFile()
             ->hasViews();
-            #->hasMigration('create_skeleton_table')
-            #->hasCommand(SkeletonCommand::class)
+        //->hasMigration('create_skeleton_table')
+        //->hasCommand(SkeletonCommand::class)
     }
 }
