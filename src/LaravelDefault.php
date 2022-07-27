@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace CodebarAG\LaravelDefault;
 
 class LaravelDefault
 {

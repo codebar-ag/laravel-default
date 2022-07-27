@@ -1,10 +1,10 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace CodebarAG\LaravelDefault\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\LaravelDefaultServiceProvider;
+use CodebarAG\LaravelDefault\LaravelDefaultServiceProvider;
 
 class TestCase extends Orchestra
 {

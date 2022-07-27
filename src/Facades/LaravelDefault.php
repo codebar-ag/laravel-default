@@ -1,13 +1,13 @@
 <?php
 
-namespace VendorName\Skeleton\Facades;
+namespace CodebarAG\LaravelDefault\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \VendorName\Skeleton\LaravelDefault
  */
-class Skeleton extends Facade
+class LaravelDefault extends Facade
 {
     protected static function getFacadeAccessor()
     {
