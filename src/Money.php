@@ -18,7 +18,7 @@ class Money
 
     public function roundMoneyDown(int|float $money): float
     {
-        #Round Down to nearest 0.05
+        //Round Down to nearest 0.05
         return floor($money * 20) / 20;
     }
 }
