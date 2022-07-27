@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Facade;
  * @method static float roundMoneyUp(int|float $money)
  * @method static float roundMoneyDown(int|float $money)
  */
-
 class Money extends Facade
 {
     protected static function getFacadeAccessor()

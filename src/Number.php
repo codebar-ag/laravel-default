@@ -8,5 +8,4 @@ class Number
     {
         return number_format($number, $decimals, $decimalSeparator, $thousandSeparator);
     }
-
 }

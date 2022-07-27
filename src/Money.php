@@ -8,7 +8,7 @@ class Money
 {
     public function format(int|float $number, $currency = 'CHF'): string
     {
-        return Number::format($number) . ' ' . $currency;
+        return Number::format($number).' '.$currency;
     }
 
     public function roundMoney(int|float $money): float
