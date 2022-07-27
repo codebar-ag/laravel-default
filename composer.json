@@ -65,7 +65,7 @@
                 "CodebarAg\\LaravelDefault\\LaravelDefaultServiceProvider"
             ],
             "aliases": {
-                "LaravelDefault": "CodebarAg\\LaravelDefault\\Facades\\LaravelDefault"
+                "LaravelDefault": "Money"
             }
         }
     },
