@@ -2,6 +2,13 @@
 
 use CodebarAg\LaravelDefault\Facades\Money;
 
+it('money: format', function () {
+    $number = 1234.56;
+    $formatted = Money::format($number);
+    expect($formatted)->toBe("1'234.56 CHF");
+});
+
+
 it('money: roundMoney', function () {
     $money = 12.13;
     $rounded = Money::roundMoney($money);
