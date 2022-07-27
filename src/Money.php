@@ -1,6 +1,6 @@
 <?php
 
-namespace CodebarAG\LaravelDefault;
+namespace CodebarAg\LaravelDefault;
 
 class Money
 {

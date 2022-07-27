@@ -2,7 +2,7 @@
 
 namespace CodebarAg\LaravelDefault\Tests;
 
-use CodebarAG\LaravelDefault\LaravelDefaultServiceProvider;
+use CodebarAg\LaravelDefault\LaravelDefaultServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 

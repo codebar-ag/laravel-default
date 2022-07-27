@@ -37,8 +37,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CodebarAg\\LaravelDefault\\": "src",
-            "CodebarAg\\LaravelDefault\\Database\\Factories\\": "database/factories"
+            "CodebarAg\\LaravelDefault\\": "src"
         }
     },
     "autoload-dev": {
@@ -65,7 +64,7 @@
                 "CodebarAg\\LaravelDefault\\LaravelDefaultServiceProvider"
             ],
             "aliases": {
-                "LaravelDefault": "Money"
+                "Money": "CodebarAg\\LaravelDefault\\Facades\\Money"
             }
         }
     },

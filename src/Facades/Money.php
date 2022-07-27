@@ -1,6 +1,6 @@
 <?php
 
-namespace CodebarAG\LaravelDefault\Facades;
+namespace CodebarAg\LaravelDefault\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -15,6 +15,6 @@ class Money extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \CodebarAG\LaravelDefault\Money::class;
+        return \CodebarAg\LaravelDefault\Money::class;
     }
 }

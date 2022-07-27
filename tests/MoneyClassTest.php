@@ -1,6 +1,6 @@
 <?php
 
-use CodebarAG\LaravelDefault\Money;
+use CodebarAg\LaravelDefault\Facades\Money;
 
 it('money: roundMoney', function () {
     $money = 12.13;
