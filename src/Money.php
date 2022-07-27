@@ -2,8 +2,15 @@
 
 namespace CodebarAg\LaravelDefault;
 
+use CodebarAg\LaravelDefault\Facades\Number;
+
 class Money
 {
+    public function format(int|float $number, $currency = 'CHF'): string
+    {
+        return Number::format($number) . ' ' . $currency;
+    }
+
     public function roundMoney(int|float $money): float
     {
         //Round to nearest 0.05
