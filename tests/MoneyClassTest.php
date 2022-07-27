@@ -8,7 +8,6 @@ it('money: format', function () {
     expect($formatted)->toBe("1'234.56 CHF");
 });
 
-
 it('money: roundMoney', function () {
     $money = 12.13;
     $rounded = Money::roundMoney($money);
