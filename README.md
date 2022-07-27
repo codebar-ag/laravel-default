@@ -1,12 +1,11 @@
 <img src="https://banners.beyondco.de/laravel-default.png?theme=light&packageManager=composer+require&packageName=codebar-ag%2Flaravel-default&pattern=architect&style=style_2&description=Boilerplate+integration+for+Laravel+Projects+at+codebar+Solutions+AG.&md=1&showWatermark=0&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg">
 
 # laravel-default
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/codebar-ag/laravel-default.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-default)
 [![run-tests](https://github.com/codebar-ag/laravel-default/actions/workflows/run-tests.yml/badge.svg)](https://github.com/codebar-ag/laravel-default/actions/workflows/run-tests.yml)
 [![PHPStan](https://github.com/codebar-ag/laravel-default/actions/workflows/phpstan.yml/badge.svg)](https://github.com/codebar-ag/laravel-default/actions/workflows/phpstan.yml)
 [![GitHub Code Style Action Status](https://github.com/codebar-ag/laravel-default/actions/workflows/fix-php-code-style-issues.yml/badge.svg)](https://github.com/codebar-ag/laravel-default/actions/workflows/fix-php-code-style-issues.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/:vendor_slug/:package_slug.svg?style=flat-square)](https://packagist.org/packages/:vendor_slug/:package_slug)
+[![Total Downloads](https://img.shields.io/packagist/dt/codebar-ag/laravel-default.svg?style=flat-square)](https://packagist.org/packages/codebar-ag/laravel-default)
 
 ## Installation
 
