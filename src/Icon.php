@@ -10,9 +10,11 @@ class Icon
     public function list()
     {
         $heroicons = $this->heroicons();
-        $fontawesome = $this->fontawesome();
 
-        return $heroicons->merge($fontawesome);
+        return $heroicons;
+
+        //$fontawesome = $this->fontawesome();
+        // return $heroicons->merge($fontawesome);
     }
 
     public function heroicons(): Collection
