@@ -10,6 +10,7 @@ class HelperIcon
     public function list()
     {
         $heroicons = $this->heroicons();
+
         return $heroicons;
     }
 
@@ -50,11 +51,11 @@ class HelperIcon
 
     protected function readDirectory($directoryName): Collection
     {
-        $path = $this->basePath() . DIRECTORY_SEPARATOR . $directoryName;
+        $path = $this->basePath().DIRECTORY_SEPARATOR.$directoryName;
 
         $directoryCheck = $this->directoryExists($path);
 
-        if (!$directoryCheck) {
+        if (! $directoryCheck) {
             return collect();
         }
 
@@ -71,9 +72,9 @@ class HelperIcon
     protected function basePath(): string
     {
         return Str::beforeLast(__DIR__, '/src')
-            . DIRECTORY_SEPARATOR . 'resources'
-            . DIRECTORY_SEPARATOR . 'views'
-            . DIRECTORY_SEPARATOR . 'components'
-            . DIRECTORY_SEPARATOR . 'icons';
+            .DIRECTORY_SEPARATOR.'resources'
+            .DIRECTORY_SEPARATOR.'views'
+            .DIRECTORY_SEPARATOR.'components'
+            .DIRECTORY_SEPARATOR.'icons';
     }
 }
