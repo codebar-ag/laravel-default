@@ -24,8 +24,5 @@ it('components: favicon renders', function () {
         '<meta name="msapplication-TileImage" content="http://localhost/favicons/ms-icon-144x144.png">',
         '<meta name="theme-color" content="#ffffff">'
     );
-<<<<<<< HEAD
 
-=======
->>>>>>> 75b74ae74544d71832b71e3e961a59470cadf26e
 })->group('components');
