@@ -27,7 +27,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/:author_username/.github/blob/main/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/codebar-ag/laravel-default/blob/main/.github/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
@@ -35,7 +35,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Sebastian Fix](https://github.com/StanBarrows)
 - [All Contributors](../../contributors)
 
 ## License
