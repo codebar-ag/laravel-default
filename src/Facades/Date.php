@@ -4,7 +4,6 @@ namespace CodebarAg\LaravelDefault\Facades;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Facade;
-use phpDocumentor\Reflection\Types\Null_;
 
 /**
  * @see \CodebarAg\LaravelDefault\Date

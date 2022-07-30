@@ -2,16 +2,15 @@
 
 namespace CodebarAg\LaravelDefault\Facades;
 
-use Carbon\Carbon;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \CodebarAg\LaravelDefault\Date
+ * @see \CodebarAg\LaravelDefault\Cache
  */
-class Icon extends Facade
+class Cache extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \CodebarAg\LaravelDefault\Icon::class;
+        return \CodebarAg\LaravelDefault\Date::class;
     }
 }
