@@ -1,8 +1,8 @@
 <?php
 
-namespace CodebarAg\LaravelDefault;
+namespace CodebarAg\LaravelDefault\Helpers;
 
-class Number
+class HelperNumber
 {
     public function format(int|float $number, int $decimals = 2, string $decimalSeparator = '.', string $thousandSeparator = "'"): string
     {

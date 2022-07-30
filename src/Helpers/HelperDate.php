@@ -1,10 +1,10 @@
 <?php
 
-namespace CodebarAg\LaravelDefault;
+namespace CodebarAg\LaravelDefault\Helpers;
 
 use Carbon\Carbon;
 
-class Date
+class HelperDate
 {
     public function formatDateTime(Carbon $date, string|null $locale = null): string
     {

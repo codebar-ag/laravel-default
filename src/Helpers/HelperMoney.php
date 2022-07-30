@@ -1,14 +1,14 @@
 <?php
 
-namespace CodebarAg\LaravelDefault;
+namespace CodebarAg\LaravelDefault\Helpers;
 
-use CodebarAg\LaravelDefault\Facades\Number;
+use CodebarAg\LaravelDefault\Facades\HelperNumber;
 
-class Money
+class HelperMoney
 {
     public function format(int|float $number, $currency = 'CHF'): string
     {
-        return Number::format($number).' '.$currency;
+        return HelperNumber::format($number).' '.$currency;
     }
 
     public function roundMoney(int|float $money): float

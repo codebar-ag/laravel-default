@@ -1,10 +1,10 @@
 <?php
 
-use CodebarAg\LaravelDefault\Facades\Icon;
+use CodebarAg\LaravelDefault\Facades\HelperIcon;
 use Illuminate\Support\Arr;
 
 it('components: icon heroicons ', function () {
-    $icons = Icon::list();
+    $icons = HelperIcon::list();
 
     $icons->each(function ($icon) {
         $name = Arr::get($icon, 'name');
