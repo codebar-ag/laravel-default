@@ -3,80 +3,173 @@
 @switch($icon)
     @case('archive')
         @include('default::components.icons.heroicons.archive')
+        @break
     @case('arrow-circle-left')
         @include('default::components.icons.heroicons.arrow-circle-left')
+        @break
     @case('arrow-circle-right')
         @include('default::components.icons.heroicons.arrow-circle-right')
+        @break
+    @case('arrow-down')
+        @include('default::components.icons.heroicons.arrow-down')
+        @break
+    @case('arrow-circle-left')
+        @include('default::components.icons.heroicons.arrow-circle-left')
+        @break
+    @case('arrow-circle-right')
+        @include('default::components.icons.heroicons.arrow-circle-right')
+        @break
     @case('arrow-sm-down')
         @include('default::components.icons.heroicons.arrow-sm-down')
+        @break
     @case('at-symbol')
         @include('default::components.icons.heroicons.at-symbol')
+        @break
     @case('bookmark')
         @include('default::components.icons.heroicons.bookmark')
+        @break
+    @case('calculator')
+        @include('default::components.icons.heroicons.calculator')
+        @break
     @case('cash')
         @include('default::components.icons.heroicons.cash')
+        @break
+    @case('chat-alt-2')
+        @include('default::components.icons.heroicons.chat-alt-2')
+        @break
     @case('chevron-left')
         @include('default::components.icons.heroicons.chevron-left')
+        @break
     @case('chevron-right')
         @include('default::components.icons.heroicons.chevron-right')
+        @break
+    @case('clipboard')
+        @include('default::components.icons.heroicons.clipboard')
+        @break
     @case('check-circle')
         @include('default::components.icons.heroicons.check-circle')
+        @break
     @case('clock')
         @include('default::components.icons.heroicons.clock')
+        @break
     @case('cog')
         @include('default::components.icons.heroicons.cog')
+        @break
+    @case('document')
+        @include('default::components.icons.heroicons.document')
+        @break
+    @case('document-download')
+        @include('default::components.icons.heroicons.document-download')
+        @break
     @case('document-report')
         @include('default::components.icons.heroicons.document-report')
+        @break
+    @case('document-text')
+        @include('default::components.icons.heroicons.document-text')
+        @break
     @case('exclamation-circle')
         @include('default::components.icons.heroicons.exclamation-circle')
+        @break
+    @case('external-link')
+        @include('default::components.icons.heroicons.external-link')
+        @break
+    @case('eye')
+        @include('default::components.icons.heroicons.eye')
+        @break
     @case('filter')
         @include('default::components.icons.heroicons.filter')
+        @break
     @case('globe-alt')
         @include('default::components.icons.heroicons.globe-alt')
+        @break
     @case('home')
         @include('default::components.icons.heroicons.home')
+        @break
     @case('inbox')
         @include('default::components.icons.heroicons.inbox')
+        @break
     @case('information-circle')
         @include('default::components.icons.heroicons.information-circle')
+        @break
     @case('lightning-bolt')
         @include('default::components.icons.heroicons.lightning-bolt')
+        @break
     @case('location-marker')
         @include('default::components.icons.heroicons.location-marker')
+        @break
     @case('login')
         @include('default::components.icons.heroicons.login')
+        @break
     @case('logout')
         @include('default::components.icons.heroicons.logout')
+        @break
     @case('menu')
         @include('default::components.icons.heroicons.menu')
+        @break
     @case('pause')
         @include('default::components.icons.heroicons.pause')
+        @break
+    @case('pencil')
+        @include('default::components.icons.heroicons.pencil')
+        @break
     @case('phone')
         @include('default::components.icons.heroicons.phone')
+        @break
     @case('plus')
         @include('default::components.icons.heroicons.plus')
+        @break
     @case('plus-circle')
         @include('default::components.icons.heroicons.plus-circle')
+        @break
     @case('question-mark-circle')
         @include('default::components.icons.heroicons.question-mark-circle')
+        @break
     @case('refresh')
         @include('default::components.icons.heroicons.refresh')
+        @break
     @case('search')
         @include('default::components.icons.heroicons.search')
+        @break
+    @case('share')
+        @include('default::components.icons.heroicons.share')
+        @break
+    @case('shopping-bag')
+        @include('default::components.icons.heroicons.shopping-bag')
+        @break
     @case('switch-horizontal')
         @include('default::components.icons.heroicons.switch-horizontal')
+        @break
     @case('trash')
         @include('default::components.icons.heroicons.trash')
+        @break
     @case('user')
         @include('default::components.icons.heroicons.user')
+        @break
     @case('users')
         @include('default::components.icons.heroicons.users')
+        @break
     @case('view-grid-add')
         @include('default::components.icons.heroicons.view-grid-add')
+        @break
+    @case('view-list')
+        @include('default::components.icons.heroicons.view-list')
+        @break
     @case('x')
         @include('default::components.icons.heroicons.x')
+        @break
     @case('x-circle')
         @include('default::components.icons.heroicons.x-circle')
+        @break
     @default
-        @include('default::components.icons.heroicons.exclamation-circle')
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="{{ $fields ?? 'h-5 w-5' }}"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor"
+             stroke-width="2">
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
 @endswitch

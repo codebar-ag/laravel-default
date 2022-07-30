@@ -3,13 +3,13 @@
 use CodebarAg\LaravelDefault\Facades\Icon;
 use Illuminate\Support\Arr;
 
-it('components: list icons', function () {
+it('components: icon heroicons ', function () {
     $icons = Icon::list();
 
     $icons->each(function ($icon) {
         $name = Arr::get($icon, 'name');
         $view = $this->blade(
-            '<x-default::icon icon="'.$name.'" />'
+            '<x-default::icon-heroicons icon="'.$name.'" />'
         );
         expect($view->__toString())->toBeString();
     });
