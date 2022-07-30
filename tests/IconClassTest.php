@@ -41,6 +41,6 @@ it('icon: list fontawesome', function () {
     $icons = Icon::fontawesome();
     expect($icons)
         ->toBeCollection()
-        # ->not()->toBeEmpty();
+        // ->not()->toBeEmpty();
         ->toBeEmpty();
 })->group('icons');
