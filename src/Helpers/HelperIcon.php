@@ -1,20 +1,16 @@
 <?php
 
-namespace CodebarAg\LaravelDefault;
+namespace CodebarAg\LaravelDefault\Helpers;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
-class Icon
+class HelperIcon
 {
     public function list()
     {
         $heroicons = $this->heroicons();
-
         return $heroicons;
-
-        //$fontawesome = $this->fontawesome();
-        // return $heroicons->merge($fontawesome);
     }
 
     public function heroicons(): Collection
@@ -54,10 +50,11 @@ class Icon
 
     protected function readDirectory($directoryName): Collection
     {
-        $path = $this->basePath().DIRECTORY_SEPARATOR.$directoryName;
+        $path = $this->basePath() . DIRECTORY_SEPARATOR . $directoryName;
+
         $directoryCheck = $this->directoryExists($path);
 
-        if (! $directoryCheck) {
+        if (!$directoryCheck) {
             return collect();
         }
 
@@ -74,9 +71,9 @@ class Icon
     protected function basePath(): string
     {
         return Str::beforeLast(__DIR__, '/src')
-            .DIRECTORY_SEPARATOR.'resources'
-            .DIRECTORY_SEPARATOR.'views'
-            .DIRECTORY_SEPARATOR.'components'
-            .DIRECTORY_SEPARATOR.'icons';
+            . DIRECTORY_SEPARATOR . 'resources'
+            . DIRECTORY_SEPARATOR . 'views'
+            . DIRECTORY_SEPARATOR . 'components'
+            . DIRECTORY_SEPARATOR . 'icons';
     }
 }

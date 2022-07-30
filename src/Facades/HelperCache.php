@@ -5,14 +5,14 @@ namespace CodebarAg\LaravelDefault\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \CodebarAg\LaravelDefault\Cache
+ * @see \CodebarAg\LaravelDefault\Helpers\HelperCache
  *
  * @method static int inSeconds()
  */
-class Cache extends Facade
+class HelperCache extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \CodebarAg\LaravelDefault\Cache::class;
+        return \CodebarAg\LaravelDefault\Helpers\HelperCache::class;
     }
 }

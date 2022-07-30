@@ -65,11 +65,11 @@
                 "CodebarAg\\LaravelDefault\\LaravelDefaultServiceProvider"
             ],
             "aliases": {
-                "Cache": "CodebarAg\\LaravelDefault\\Facades\\Cache",
-                "Date": "CodebarAg\\LaravelDefault\\Facades\\Date",
-                "Icon": "CodebarAg\\LaravelDefault\\Facades\\Icon",
-                "Money": "CodebarAg\\LaravelDefault\\Facades\\Money",
-                "Number": "CodebarAg\\LaravelDefault\\Facades\\Number"
+                "HelperCache": "CodebarAg\\LaravelDefault\\Facades\\HelperCache",
+                "HelperDate": "CodebarAg\\LaravelDefault\\Facades\\HelperDate",
+                "HelperIcon": "CodebarAg\\LaravelDefault\\Facades\\HelperIcon",
+                "HelperMoney": "CodebarAg\\LaravelDefault\\Facades\\HelperMoney",
+                "HelperNumber": "CodebarAg\\LaravelDefault\\Facades\\HelperNumber"
             }
         }
     },
