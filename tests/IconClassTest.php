@@ -43,12 +43,4 @@ it('icon: list fontawesome', function () {
         ->toBeCollection()
         // ->not()->toBeEmpty();
         ->toBeEmpty();
-
-    /*    $icon = $icons->first();
-
-        expect($icon['name'])
-            ->toBeString()
-            ->and($icon['collection'])
-            ->toBeString()
-            ->toEqual('fontawesome');*/
 })->group('icons');
