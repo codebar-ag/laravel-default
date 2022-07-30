@@ -62,7 +62,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelDefaultServiceProvider"
+                "CodebarAg\\LaravelDefault\\LaravelDefaultServiceProvider"
             ],
             "aliases": {
                 "Cache": "CodebarAg\\LaravelDefault\\Facades\\Cache",
