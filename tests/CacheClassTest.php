@@ -2,6 +2,8 @@
 
 use CodebarAg\LaravelDefault\Facades\Cache;
 
-it('cache:', function () {
-    expect(true)->toBe(false);
-});
+it('cache: in seconds', function () {
+    $seconds = Cache::inSeconds();
+    expect($seconds)
+        ->toBeInt();
+})->group('cache');

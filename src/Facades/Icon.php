@@ -3,10 +3,14 @@
 namespace CodebarAg\LaravelDefault\Facades;
 
 use Carbon\Carbon;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \CodebarAg\LaravelDefault\Date
+ * @method static Collection list()
+ * @method static Collection heroicons()
+ * @method static Collection fontawesome()
  */
 class Icon extends Facade
 {

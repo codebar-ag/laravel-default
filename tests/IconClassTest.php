@@ -2,7 +2,6 @@
 
 use CodebarAg\LaravelDefault\Facades\Icon;
 
-
 it('icon: list icons', function () {
     $icons = Icon::list();
 

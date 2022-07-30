@@ -13,10 +13,10 @@ it('date: format date-time', function () {
 
     $formatted = Date::formatDateTime($date, 'default');
     expect($formatted)->toBe($date->format('d.m.Y H:i'));
-});
+})->group('date');
 
 it('date: format date', function () {
     $date = now();
     $formatted = Date::formatDate($date);
     expect($formatted)->toBe($date->format('d.m.Y'));
-});
+})->group('date');
