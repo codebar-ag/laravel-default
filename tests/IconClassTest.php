@@ -14,7 +14,6 @@ it('icon: list icons', function () {
     expect($icon)
         ->toBeArray()
         ->toHaveKeys(['name', 'collection']);
-
 })->group('icons');
 
 it('icon: list heroicons', function () {
@@ -36,7 +35,6 @@ it('icon: list heroicons', function () {
         ->and($icon['collection'])
         ->toBeString()
         ->toEqual('heroicons');
-
 })->group('icons');
 
 it('icon: list fontawesome', function () {
@@ -52,5 +50,4 @@ it('icon: list fontawesome', function () {
         ->and($icon['collection'])
         ->toBeString()
         ->toEqual('fontawesome');
-
 })->group('icons');

@@ -9,7 +9,6 @@ use Spatie\Enum\Laravel\Enum;
  * @method static self STAGING()
  * @method static self LOCAL()
  */
-
 class EnvironmentEnum extends Enum
 {
     protected static function values(): array

@@ -11,6 +11,7 @@ class Icon
     {
         $heroicons = $this->heroicons();
         $fontawesome = $this->fontawesome();
+
         return $heroicons->merge($fontawesome);
     }
 
@@ -19,8 +20,8 @@ class Icon
         $collectionName = 'heroicons';
         $files = $this->readDirectory($collectionName);
         $icons = $this->filterIcons($files);
-        return $this->mapCollections($icons, $collectionName);
 
+        return $this->mapCollections($icons, $collectionName);
     }
 
     public function fontawesome(): Collection
@@ -28,8 +29,8 @@ class Icon
         $collectionName = 'fontawesome';
         $files = $this->readDirectory($collectionName);
         $icons = $this->filterIcons($files);
-        return $this->mapCollections($icons, $collectionName);
 
+        return $this->mapCollections($icons, $collectionName);
     }
 
     protected function mapCollections(Collection $icons, string $collection)
@@ -37,7 +38,7 @@ class Icon
         return $icons->map(function ($icon) use ($collection) {
             return [
                 'name' => $icon,
-                'collection' => $collection
+                'collection' => $collection,
             ];
         });
     }
@@ -51,14 +52,15 @@ class Icon
 
     protected function readDirectory($directoryName): Collection
     {
-        $path = $this->basePath() . DIRECTORY_SEPARATOR . $directoryName;
+        $path = $this->basePath().DIRECTORY_SEPARATOR.$directoryName;
         $directoryCheck = $this->directoryExists($path);
 
-        if (!$directoryCheck) {
+        if (! $directoryCheck) {
             return collect();
         }
 
         $files = scandir($path);
+
         return collect($files);
     }
 
@@ -70,9 +72,9 @@ class Icon
     protected function basePath(): string
     {
         return Str::beforeLast(__DIR__, '/src')
-            . DIRECTORY_SEPARATOR . 'resources'
-            . DIRECTORY_SEPARATOR . 'views'
-            . DIRECTORY_SEPARATOR . 'components'
-            . DIRECTORY_SEPARATOR . 'icons';
+            .DIRECTORY_SEPARATOR.'resources'
+            .DIRECTORY_SEPARATOR.'views'
+            .DIRECTORY_SEPARATOR.'components'
+            .DIRECTORY_SEPARATOR.'icons';
     }
 }

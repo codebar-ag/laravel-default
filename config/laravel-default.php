@@ -2,6 +2,6 @@
 
 return [
     'cache' => [
-        #'in_seconds' => 1,
+        //'in_seconds' => 1,
     ],
 ];

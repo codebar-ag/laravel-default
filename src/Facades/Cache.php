@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Facade;
 
 /**
  * @see \CodebarAg\LaravelDefault\Cache
+ *
  * @method static int inSeconds()
  */
 class Cache extends Facade

@@ -6,7 +6,7 @@ it('date: format date-time', function () {
     $date = now();
 
     $formatted = Date::formatDateTime($date, 'de');
-    expect($formatted)->toBe($date->format('d.m.Y H:i') . ' Uhr');
+    expect($formatted)->toBe($date->format('d.m.Y H:i').' Uhr');
 
     $formatted = Date::formatDateTime($date, 'en');
     expect($formatted)->toBe($date->format('d.m.Y g:i a'));

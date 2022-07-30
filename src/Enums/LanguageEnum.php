@@ -10,7 +10,6 @@ use Spatie\Enum\Laravel\Enum;
  * @method static self IT()
  * @method static self FR()
  */
-
 class LanguageEnum extends Enum
 {
     protected static function values(): array
