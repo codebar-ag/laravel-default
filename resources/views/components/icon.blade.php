@@ -1,4 +1,4 @@
-@props( ['icon','fields' => ''])
+@props( ['icon','fields' => null])
 
 @switch($icon)
     @case('archive')
