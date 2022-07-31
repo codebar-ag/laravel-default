@@ -10,8 +10,8 @@
     @case('arrow-circle-right')
         @include('default::components.icons.heroicons.arrow-circle-right')
         @break
-    @case('arrow-down')
-        @include('default::components.icons.heroicons.arrow-down')
+    @case('arrow-circle-up')
+        @include('default::components.icons.heroicons.arrow-circle-up')
         @break
     @case('arrow-circle-left')
         @include('default::components.icons.heroicons.arrow-circle-left')
@@ -19,8 +19,23 @@
     @case('arrow-circle-right')
         @include('default::components.icons.heroicons.arrow-circle-right')
         @break
+    @case('arrow-circle-up')
+        @include('default::components.icons.heroicons.arrow-circle-up')
+        @break
+    @case('arrow-down')
+        @include('default::components.icons.heroicons.arrow-down')
+        @break
     @case('arrow-sm-down')
         @include('default::components.icons.heroicons.arrow-sm-down')
+        @break
+    @case('arrow-sm-left')
+        @include('default::components.icons.heroicons.arrow-sm-left')
+        @break
+    @case('arrow-sm-up')
+        @include('default::components.icons.heroicons.arrow-sm-up')
+        @break
+    @case('arrow-up')
+        @include('default::components.icons.heroicons.arrow-up')
         @break
     @case('at-symbol')
         @include('default::components.icons.heroicons.at-symbol')
