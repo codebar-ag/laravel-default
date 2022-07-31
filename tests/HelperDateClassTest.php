@@ -1,22 +1,22 @@
 <?php
 
-use CodebarAg\LaravelDefault\Facades\Date;
+use CodebarAg\LaravelDefault\Facades\HelperDate;
 
-it('date: format date-time', function () {
+it('helper date: format date-time', function () {
     $date = now();
 
-    $formatted = Date::formatDateTime($date, 'de');
+    $formatted = HelperDate::formatDateTime($date, 'de');
     expect($formatted)->toBe($date->format('d.m.Y H:i').' Uhr');
 
-    $formatted = Date::formatDateTime($date, 'en');
+    $formatted = HelperDate::formatDateTime($date, 'en');
     expect($formatted)->toBe($date->format('d.m.Y g:i a'));
 
-    $formatted = Date::formatDateTime($date, 'default');
+    $formatted = HelperDate::formatDateTime($date, 'default');
     expect($formatted)->toBe($date->format('d.m.Y H:i'));
 })->group('date');
 
 it('date: format date', function () {
     $date = now();
-    $formatted = Date::formatDate($date);
+    $formatted = HelperDate::formatDate($date);
     expect($formatted)->toBe($date->format('d.m.Y'));
 })->group('date');

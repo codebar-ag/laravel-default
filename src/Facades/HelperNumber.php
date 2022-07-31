@@ -5,14 +5,14 @@ namespace CodebarAg\LaravelDefault\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \CodebarAg\LaravelDefault\Money
+ * @see \CodebarAg\LaravelDefault\Helpers\HelperMoney
  *
  * @method static string format(int|float $number)
  */
-class Number extends Facade
+class HelperNumber extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \CodebarAg\LaravelDefault\Number::class;
+        return \CodebarAg\LaravelDefault\Helpers\HelperNumber::class;
     }
 }

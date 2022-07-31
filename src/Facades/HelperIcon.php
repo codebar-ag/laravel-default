@@ -6,16 +6,16 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \CodebarAg\LaravelDefault\Date
+ * @see \CodebarAg\LaravelDefault\Helpers\HelperDate
  *
  * @method static Collection list()
  * @method static Collection heroicons()
  * @method static Collection fontawesome()
  */
-class Icon extends Facade
+class HelperIcon extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \CodebarAg\LaravelDefault\Icon::class;
+        return \CodebarAg\LaravelDefault\Helpers\HelperIcon::class;
     }
 }

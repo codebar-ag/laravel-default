@@ -1,9 +1,9 @@
 <?php
 
-use CodebarAg\LaravelDefault\Facades\Icon;
+use CodebarAg\LaravelDefault\Facades\HelperIcon;
 
-it('icon: list icons', function () {
-    $icons = Icon::list();
+it('helper icon: list icons', function () {
+    $icons = HelperIcon::list();
 
     expect($icons)
         ->toBeCollection()
@@ -16,8 +16,8 @@ it('icon: list icons', function () {
         ->toHaveKeys(['name', 'collection']);
 })->group('icons');
 
-it('icon: list heroicons', function () {
-    $icons = Icon::heroicons();
+it('helper icon: list heroicons', function () {
+    $icons = HelperIcon::heroicons();
     expect($icons)
         ->toBeCollection()
         ->not()->toBeEmpty();
@@ -37,8 +37,8 @@ it('icon: list heroicons', function () {
         ->toEqual('heroicons');
 })->group('icons');
 
-it('icon: list fontawesome', function () {
-    $icons = Icon::fontawesome();
+it('helper icon: list fontawesome', function () {
+    $icons = HelperIcon::fontawesome();
     expect($icons)
         ->toBeCollection()
         // ->not()->toBeEmpty();

@@ -1,10 +1,10 @@
 <?php
 
-namespace CodebarAg\LaravelDefault;
+namespace CodebarAg\LaravelDefault\Helpers;
 
 use CodebarAg\LaravelDefault\Enums\EnvironmentEnum;
 
-class Cache
+class HelperCache
 {
     public function inSeconds(): int
     {
