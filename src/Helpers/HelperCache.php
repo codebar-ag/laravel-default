@@ -2,8 +2,8 @@
 
 namespace CodebarAg\LaravelDefault\Helpers;
 
-use Illuminate\Support\Facades\Cache;
 use CodebarAg\LaravelDefault\Enums\EnvironmentEnum;
+use Illuminate\Support\Facades\Cache;
 
 class HelperCache
 {
@@ -15,7 +15,8 @@ class HelperCache
             }),
             default => Cache::rememberForever($key, function () use ($store) {
                 return $store;
-            }),
+            }
+            ),
         };
     }
 
@@ -27,7 +28,8 @@ class HelperCache
             }),
             default => Cache::remember($key, $time, function () use ($store) {
                 return $store;
-            }),
+            }
+            ),
         };
     }
 
@@ -43,7 +45,7 @@ class HelperCache
     {
         $default = config('laravel-default.cache.in_seconds', null);
 
-        if (!is_null($default) && is_int($default)) {
+        if (! is_null($default) && is_int($default)) {
             return $default;
         }
 

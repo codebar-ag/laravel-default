@@ -9,8 +9,7 @@ it('helper money: format', function () {
 
     $number = null;
     $formatted = HelperMoney::format($number);
-    expect($formatted)->toBe("0.00 CHF");
-
+    expect($formatted)->toBe('0.00 CHF');
 })->group('money');
 
 it('helper money: roundMoney', function () {

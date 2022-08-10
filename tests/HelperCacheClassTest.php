@@ -35,4 +35,3 @@ it('helper cache: cache forever with tags', function () {
     expect($response)
         ->toBeString()->toEqual($store);
 })->group('cache');
-

@@ -9,6 +9,5 @@ it('helper number: format', function () {
 
     $number = null;
     $formatted = HelperNumber::format($number);
-    expect($formatted)->toBe("0.00");
-
+    expect($formatted)->toBe('0.00');
 })->group('number');
