@@ -2,15 +2,48 @@
 
 namespace CodebarAg\LaravelDefault\Helpers;
 
+use Illuminate\Support\Facades\Cache;
 use CodebarAg\LaravelDefault\Enums\EnvironmentEnum;
 
 class HelperCache
 {
+    public function cacheForeverWithTags(array $tags, string $key, $store)
+    {
+        return match (config('cache.default')) {
+            'redis', 'memcached' => Cache::tags($tags)->rememberForever($key, function () use ($store) {
+                return $store;
+            }),
+            default => Cache::rememberForever($key, function () use ($store) {
+                return $store;
+            }),
+        };
+    }
+
+    public function cacheRememberWithTags(array $tags, string $key, int $time, $store)
+    {
+        return match (config('cache.default')) {
+            'redis', 'memcached' => Cache::tags($tags)->remember($key, $time, function () use ($store) {
+                return $store;
+            }),
+            default => Cache::remember($key, $time, function () use ($store) {
+                return $store;
+            }),
+        };
+    }
+
+    public function flushTags(array $tags): bool
+    {
+        return match (config('cache.default')) {
+            'redis', 'memcached' => Cache::tags($tags)->flush(),
+            default => Cache::flush()
+        };
+    }
+
     public function inSeconds(): int
     {
         $default = config('laravel-default.cache.in_seconds', null);
 
-        if (! is_null($default) && is_int($default)) {
+        if (!is_null($default) && is_int($default)) {
             return $default;
         }
 
