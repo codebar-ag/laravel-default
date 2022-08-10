@@ -2,7 +2,7 @@
 
 All notable changes to `laravel-default` will be documented in this file.
 
-## 0.8.0 - 2022-08-10
+## 0.6.0 - 2022-08-10
 - Updated Cache Helper
 - Updated Heroicons with 3 new Icons
 
