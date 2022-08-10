@@ -40,6 +40,9 @@
     @case('at-symbol')
         @include('default::components.icons.heroicons.at-symbol')
         @break
+    @case('bell')
+        @include('default::components.icons.heroicons.bell')
+        @break
     @case('bookmark')
         @include('default::components.icons.heroicons.bookmark')
         @break
@@ -69,6 +72,9 @@
         @break
     @case('cog')
         @include('default::components.icons.heroicons.cog')
+        @break
+    @case('device-mobile')
+        @include('default::components.icons.heroicons.device-mobile')
         @break
     @case('document')
         @include('default::components.icons.heroicons.document')
@@ -117,6 +123,9 @@
         @break
     @case('logout')
         @include('default::components.icons.heroicons.logout')
+        @break
+    @case('mail')
+        @include('default::components.icons.heroicons.mail')
         @break
     @case('menu')
         @include('default::components.icons.heroicons.menu')
