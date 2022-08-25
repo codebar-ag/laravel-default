@@ -12,7 +12,6 @@ it('helper money: format', function () {
     expect($formatted)->toBe('0.00 CHF');
 })->group('money');
 
-
 it('helper money: format-left', function () {
     $number = 1234.56;
     $formatted = HelperMoney::formatLeft($number);
