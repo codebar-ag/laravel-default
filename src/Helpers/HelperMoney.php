@@ -6,6 +6,11 @@ use CodebarAg\LaravelDefault\Facades\HelperNumber;
 
 class HelperMoney
 {
+    public function formatLeft(int|float|null $number, $currency = 'CHF'): string
+    {
+        return $currency.' '.HelperNumber::format($number);
+    }
+
     public function format(int|float|null $number, $currency = 'CHF'): string
     {
         return HelperNumber::format($number).' '.$currency;
