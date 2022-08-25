@@ -10,8 +10,8 @@
     @case('arrow-circle-right')
         @include('default::components.icons.heroicons.arrow-circle-right')
         @break
-    @case('arrow-down')
-        @include('default::components.icons.heroicons.arrow-down')
+    @case('arrow-circle-up')
+        @include('default::components.icons.heroicons.arrow-circle-up')
         @break
     @case('arrow-circle-left')
         @include('default::components.icons.heroicons.arrow-circle-left')
@@ -19,11 +19,29 @@
     @case('arrow-circle-right')
         @include('default::components.icons.heroicons.arrow-circle-right')
         @break
+    @case('arrow-circle-up')
+        @include('default::components.icons.heroicons.arrow-circle-up')
+        @break
+    @case('arrow-down')
+        @include('default::components.icons.heroicons.arrow-down')
+        @break
     @case('arrow-sm-down')
         @include('default::components.icons.heroicons.arrow-sm-down')
         @break
+    @case('arrow-sm-left')
+        @include('default::components.icons.heroicons.arrow-sm-left')
+        @break
+    @case('arrow-sm-up')
+        @include('default::components.icons.heroicons.arrow-sm-up')
+        @break
+    @case('arrow-up')
+        @include('default::components.icons.heroicons.arrow-up')
+        @break
     @case('at-symbol')
         @include('default::components.icons.heroicons.at-symbol')
+        @break
+    @case('bell')
+        @include('default::components.icons.heroicons.bell')
         @break
     @case('bookmark')
         @include('default::components.icons.heroicons.bookmark')
@@ -54,6 +72,9 @@
         @break
     @case('cog')
         @include('default::components.icons.heroicons.cog')
+        @break
+    @case('device-mobile')
+        @include('default::components.icons.heroicons.device-mobile')
         @break
     @case('document')
         @include('default::components.icons.heroicons.document')
@@ -102,6 +123,9 @@
         @break
     @case('logout')
         @include('default::components.icons.heroicons.logout')
+        @break
+    @case('mail')
+        @include('default::components.icons.heroicons.mail')
         @break
     @case('menu')
         @include('default::components.icons.heroicons.menu')

@@ -6,6 +6,10 @@ it('helper money: format', function () {
     $number = 1234.56;
     $formatted = HelperMoney::format($number);
     expect($formatted)->toBe("1'234.56 CHF");
+
+    $number = null;
+    $formatted = HelperMoney::format($number);
+    expect($formatted)->toBe('0.00 CHF');
 })->group('money');
 
 it('helper money: roundMoney', function () {
