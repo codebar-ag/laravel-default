@@ -8,12 +8,12 @@ class HelperMoney
 {
     public function formatLeft(int|float|null $number, $currency = 'CHF'): string
     {
-        return $currency . ' ' . HelperNumber::format($number);
+        return $currency.' '.HelperNumber::format($number);
     }
 
     public function format(int|float|null $number, $currency = 'CHF'): string
     {
-        return HelperNumber::format($number) . ' ' . $currency;
+        return HelperNumber::format($number).' '.$currency;
     }
 
     public function roundMoney(int|float $money): float
