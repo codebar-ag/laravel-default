@@ -11,4 +11,14 @@ class HelperFile
 
         return round(pow(1024, $base - floor($base)), $precision).' '.$suffixes[floor($base)];
     }
+
+    public function nameWithDate(string $name): string
+    {
+        return now()->format('Ymd_').$name;
+    }
+
+    public function nameWithDateTime(string $name): string
+    {
+        return now()->format('YmdHm_').$name;
+    }
 }
