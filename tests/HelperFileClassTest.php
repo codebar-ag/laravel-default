@@ -33,3 +33,26 @@ it('helper file: format bytes', function () {
         ->toBeString()
         ->toEqual('1 TB');
 })->group('file');
+
+
+it('helper file: name with date', function () {
+
+    $name = 'filename';
+
+    $formatted = HelperFile::nameWithDate($name);
+    expect($formatted)
+        ->toBeString()
+        ->toEqual(now()->format('Ymd_') . $name);
+
+})->group('file');
+
+it('helper file: name with date time', function () {
+
+    $name = 'filename';
+
+    $formatted = HelperFile::nameWithDateTime($name);
+    expect($formatted)
+        ->toBeString()
+        ->toEqual(now()->format('YmdHm_') . $name);
+
+})->group('file');

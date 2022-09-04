@@ -4,8 +4,10 @@ namespace CodebarAg\LaravelDefault\Helpers;
 
 class HelperBank
 {
-    public function formatIban(string $iban): string
+    public function formatIban(string|null $iban): string|null
     {
-        return trim(chunk_split($iban, 4, ' '));
+        return $iban ?
+            trim(chunk_split($iban, 4, ' '))
+            : null;
     }
 }

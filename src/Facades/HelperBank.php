@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \CodebarAg\LaravelDefault\Helpers\HelperBank
  *
- * @method static string formatIban(string $iban)
+ * @method static string|null formatIban(string $iban)
  */
 class HelperBank extends Facade
 {
