@@ -4,6 +4,9 @@
     @case('archive')
         @include('default::components.icons.heroicons.archive')
         @break
+    @case('archive-box')
+        @include('default::components.icons.heroicons.archive-box')
+        @break
     @case('arrow-circle-left')
         @include('default::components.icons.heroicons.arrow-circle-left')
         @break
@@ -100,6 +103,9 @@
     @case('filter')
         @include('default::components.icons.heroicons.filter')
         @break
+    @case('folder')
+        @include('default::components.icons.heroicons.folder')
+        @break
     @case('globe-alt')
         @include('default::components.icons.heroicons.globe-alt')
         @break
@@ -148,6 +154,9 @@
     @case('question-mark-circle')
         @include('default::components.icons.heroicons.question-mark-circle')
         @break
+    @case('rectangle-stack')
+        @include('default::components.icons.heroicons.rectangle-stack')
+        @break
     @case('refresh')
         @include('default::components.icons.heroicons.refresh')
         @break
@@ -177,6 +186,12 @@
         @break
     @case('view-list')
         @include('default::components.icons.heroicons.view-list')
+        @break
+    @case('wrench')
+        @include('default::components.icons.heroicons.wrench')
+        @break
+    @case('wrench-screwdriver')
+        @include('default::components.icons.heroicons.wrench-screwdriver')
         @break
     @case('x')
         @include('default::components.icons.heroicons.x')
