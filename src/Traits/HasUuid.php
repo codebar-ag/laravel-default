@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits;
+namespace CodebarAg\LaravelDefault\Traits;
 
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 
