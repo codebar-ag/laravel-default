@@ -18,6 +18,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "codebar-ag/laravel-feature-policy": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "illuminate/contracts": "^10.0",
         "spatie/laravel-enum": "^3.0",
