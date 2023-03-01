@@ -21,6 +21,7 @@
         "codebar-ag/laravel-feature-policy": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "illuminate/contracts": "^10.0",
+        "spatie/laravel-csp": "^2.8",
         "spatie/laravel-enum": "^3.0",
         "spatie/laravel-package-tools": "^1.14",
         "spatie/laravel-ray": "^1.32"
