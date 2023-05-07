@@ -5,7 +5,7 @@ namespace CodebarAg\LaravelDefault\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \CodebarAg\LaravelDefault\Helpers\HelperMoney
+ * @see \CodebarAg\LaravelDefault\Helpers\HelperNumber
  *
  * @method static string format(int|float $number)
  */

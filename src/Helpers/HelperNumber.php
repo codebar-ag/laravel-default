@@ -8,6 +8,11 @@ class HelperNumber
     {
         return $number
             ? number_format($number, $decimals, $decimalSeparator, $thousandSeparator)
-            : '0.00';
+            : self::defaultValue($decimals);
+    }
+
+    protected static function defaultValue($decimals = 0): string
+    {
+        return number_format(0, $decimals);
     }
 }
