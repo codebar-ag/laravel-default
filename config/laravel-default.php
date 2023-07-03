@@ -1,16 +1,7 @@
 <?php
 
 use CodebarAg\FeaturePolicy\Value;
-use CodebarAg\LaravelDefault\Checks\FailedJobsCheck;
 use Spatie\Csp\Keyword;
-use Spatie\Health\Checks\Checks\CacheCheck;
-use Spatie\Health\Checks\Checks\DebugModeCheck;
-use Spatie\Health\Checks\Checks\EnvironmentCheck;
-use Spatie\Health\Checks\Checks\OptimizedAppCheck;
-use Spatie\Health\Checks\Checks\QueueCheck;
-use Spatie\Health\Checks\Checks\ScheduleCheck;
-use Spatie\Health\Facades\Health;
-use Spatie\SecurityAdvisoriesHealthCheck\SecurityAdvisoriesCheck;
 
 return [
 
@@ -21,23 +12,6 @@ return [
             'url' => env('LARAVEL_DEFAULT_FATHOM_URL', 'https://cdn-eu.usefathom.com/script.js'),
             'site_id' => env('LARAVEL_DEFAULT_FATHOM_SITE_ID'),
             'environments' => ['staging', 'production'],
-        ],
-    ],
-
-    'health' => [
-        'checks' => [
-            Health::checks([
-                DebugModeCheck::new(),
-                EnvironmentCheck::new(),
-                SecurityAdvisoriesCheck::new(),
-                // RedisCheck::new(),
-                QueueCheck::new()->failWhenHealthJobTakesLongerThanMinutes(30),
-                CacheCheck::new(),
-                FailedJobsCheck::new(),
-                // HorizonCheck::new(),
-                ScheduleCheck::new()->heartbeatMaxAgeInMinutes(30),
-                OptimizedAppCheck::new(),
-            ]),
         ],
     ],
 
