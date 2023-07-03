@@ -23,8 +23,10 @@
         "illuminate/contracts": "^10.0",
         "spatie/laravel-csp": "^2.8",
         "spatie/laravel-enum": "^3.0",
+        "spatie/laravel-health": "^1.22",
         "spatie/laravel-package-tools": "^1.14",
-        "spatie/laravel-ray": "^1.32"
+        "spatie/laravel-ray": "^1.32",
+        "spatie/security-advisories-health-check": "^1.0"
     },
     "require-dev": {
         "laravel/pint": "^1.5",

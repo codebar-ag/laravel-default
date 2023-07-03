@@ -94,5 +94,6 @@ return [
             'fonts.googleapis.com/'.
             'rsms.me/inter/',
         ],
+
     ],
 ];
