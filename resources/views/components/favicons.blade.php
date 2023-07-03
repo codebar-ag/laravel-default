@@ -1,4 +1,4 @@
-@props( ['manifest' => asset('manifest.json'), 'path' => asset('favicons'), 'color' => '#ffffff'])
+@props(['manifest' => asset('manifest.json'), 'path' => asset('favicons'), 'color' => '#ffffff'])
 
 <link rel="apple-touch-icon" sizes="57x57" href="{{ $path . '/apple-icon-57x57.png' }}">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ $path . '/apple-icon-60x60.png' }}">
