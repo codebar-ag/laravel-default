@@ -4,7 +4,6 @@ namespace CodebarAg\LaravelDefault\Policies;
 
 use CodebarAg\FeaturePolicy\Directive;
 use CodebarAg\FeaturePolicy\Policies\Basic;
-use CodebarAg\FeaturePolicy\Value;
 
 class FeaturePolicy extends Basic
 {
@@ -13,7 +12,7 @@ class FeaturePolicy extends Basic
         parent::configure();
 
         $this
-            ->addDirective(Directive::CAMERA, Value::SELF)
-            ->addDirective(Directive::FULLSCREEN, Value::SELF);
+            ->addDirective(Directive::CAMERA, config('laravel-default.feature_policy.camera'))
+            ->addDirective(Directive::FULLSCREEN, config('laravel-default.feature_policy.fullscreen'));
     }
 }
