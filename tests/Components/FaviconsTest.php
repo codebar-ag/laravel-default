@@ -5,6 +5,8 @@ it('components: favicon renders', function () {
         '<x-default::favicons/>',
     );
 
+    ray($view->__toString());
+
     expect($view->__toString())->toContain(
         '<link rel="apple-touch-icon" sizes="57x57" href="http://localhost/favicons/apple-icon-57x57.png">',
         '<link rel="apple-touch-icon" sizes="60x60" href="http://localhost/favicons/apple-icon-60x60.png">',
@@ -24,4 +26,4 @@ it('components: favicon renders', function () {
         '<meta name="msapplication-TileImage" content="http://localhost/favicons/ms-icon-144x144.png">',
         '<meta name="theme-color" content="#ffffff">'
     );
-})->group('components')->skip();
+})->group('components');

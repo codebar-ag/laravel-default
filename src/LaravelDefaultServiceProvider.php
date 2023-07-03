@@ -17,8 +17,8 @@ class LaravelDefaultServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-default')
             ->hasConfigFile('laravel-default')
-            ->hasViews()
-            ->hasTranslations()
-            ->hasViewComponents('fathomn', 'favicon');
+            ->hasViewComponents('favicon', 'favicon')
+            ->hasViewComponents('fathom', 'fathom')
+            ->hasViews();
     }
 }
