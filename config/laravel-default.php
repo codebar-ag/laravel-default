@@ -5,6 +5,12 @@ use Spatie\Csp\Keyword;
 
 return [
 
+    'cache' => [
+        'production' => 604800, // 1 week
+        'staging' => 86400, // 1 day
+        'default' => 1, // 1 second
+    ],
+
     'services' => [
         'fathom' => [
             // Global Processing EU Isolation https://cdn.usefathom.com/script.js
