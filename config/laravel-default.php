@@ -32,7 +32,7 @@ return [
     'security_headers' => [
         'connect' => [
             Keyword::SELF,
-            'ws:',
+            'wss:',
             'api.userback.io/',
             'ka-p.fontawesome.com/',
             'res.cloudinary.com/codebar/',
