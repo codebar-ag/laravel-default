@@ -6,7 +6,7 @@ use Carbon\Carbon;
 
 class HelperDate
 {
-    public function formatDateTime(Carbon $date, string|null $locale = null): string
+    public function formatDateTime(Carbon $date, string $locale = null): string
     {
         return match ($locale ?? app()->getLocale()) {
             'de', 'de_CH' => $date->format('d.m.Y H:i').' Uhr',
