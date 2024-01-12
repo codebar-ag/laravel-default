@@ -69,7 +69,6 @@
                 "CodebarAg\\LaravelDefault\\LaravelDefaultServiceProvider"
             ],
             "aliases": {
-                "HelperCache": "CodebarAg\\LaravelDefault\\Facades\\HelperCache",
                 "HelperDate": "CodebarAg\\LaravelDefault\\Facades\\HelperDate",
                 "HelperIcon": "CodebarAg\\LaravelDefault\\Facades\\HelperIcon",
                 "HelperMoney": "CodebarAg\\LaravelDefault\\Facades\\HelperMoney",
