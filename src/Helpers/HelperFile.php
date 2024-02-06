@@ -6,7 +6,7 @@ use Illuminate\Support\Number;
 
 class HelperFile
 {
-    public function formatBytes(int $size, int $precision = 1): string
+    public function formatBytes(int $size, int $precision = 0): string
     {
         return Number::fileSize($size, $precision);
     }
