@@ -13,9 +13,9 @@ jobs:
       fail-fast: true
       matrix:
         os: [ ubuntu-latest ]
-        php: [ 8.2, 8.3 ]
-        laravel: [ 10.33.* ]
-        testbench: [ 8.* ]
+        php: [ 8.3 ]
+        laravel: [ 11.* ]
+        testbench: [ 9.* ]
         stability: [ prefer-lowest, prefer-stable ]
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
